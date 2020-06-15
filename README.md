@@ -9,7 +9,7 @@ Goals:
 
 It's really easy to build the exact object graph you want:
 
-```
+```elixir
 account = create(:account)
 contact = create(:contact, account_id: account.id)
 invoice = create(:invoice, contact_id: contact.id)
